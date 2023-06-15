@@ -7,7 +7,7 @@ jpeg_quality = 80
 [tags]
     # File Uploads
     [tags.attachments]
-        max_size = 20000000
+        max_size = 500000000
         serve_if_field_present = ["object_id", "message_id"]
 
     # User Avatars
