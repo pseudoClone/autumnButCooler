@@ -7,30 +7,30 @@ jpeg_quality = 80
 [tags]
     # File Uploads
     [tags.attachments]
-        max_size = 500000000
+        max_size = 500000000 # 500MB
         serve_if_field_present = ["object_id", "message_id"]
 
     # User Avatars
     [tags.avatars]
-        max_size = 4000000
+        max_size = 4000000 # 4mb
         restrict_content_type = "Image"
         serve_if_field_present = ["object_id", "user_id"]
     
     # User Profile Backgrounds
     [tags.backgrounds]
-        max_size = 6000000
+        max_size = 6000000 # 6mb
         restrict_content_type = "Image"
         serve_if_field_present = ["object_id", "user_id"]
         
     # Channel / Server Icons
     [tags.icons]
-        max_size = 2500000
+        max_size = 2500000 # 250 KB
         restrict_content_type = "Image"
         serve_if_field_present = ["object_id"]
     
     # Banners
     [tags.banners]
-        max_size = 6000000
+        max_size = 6000000 # 6mb
         restrict_content_type = "Image"
         serve_if_field_present = ["object_id", "server_id"]
 
